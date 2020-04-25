@@ -3,6 +3,7 @@ import os
 from ui.pages.base import BasePage
 from ui.pages.main import MainPage
 from ui.pages.cabinet import CabinetPage
+from ui.pages.segment import SegmentPage
 
 
 class BaseCase:

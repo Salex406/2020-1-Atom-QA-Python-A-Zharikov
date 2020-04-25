@@ -8,6 +8,7 @@ from ui.pages.main import MainPage
 from ui.pages.cabinet import CabinetPage
 from ui.pages.segment import SegmentPage
 from selenium.webdriver.common.keys import Keys
+from api.client import MytargetClient
 
 
 class UsupportedBrowserException(Exception):
@@ -34,10 +35,24 @@ def driver(config):
     browser = config['browser']
     version = config['version']
     url = config['url']
+    selenoid = config['selenoid']
 
     if browser == 'chrome':
-        manager = ChromeDriverManager(version='latest')
-        driver = webdriver.Chrome(executable_path=manager.install())
+        if selenoid == "True":
+            options = ChromeOptions()
+            options.add_argument("--window-size=800,600")
+            capabilities = {'acceptInsecureCerts': True,
+                        'browserName': 'chrome',
+                        'version': version,
+                        }
+
+            driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub/',
+                                  options=options,
+                                  desired_capabilities=capabilities
+                                  )
+        else:   
+            manager = ChromeDriverManager(version='latest')
+            driver = webdriver.Chrome(executable_path=manager.install())
     elif browser == 'firefox':
         manager = GeckoDriverManager(version=version)
         driver = webdriver.Firefox(executable_path=manager.install())
@@ -63,3 +78,9 @@ def authorize(driver, config):
     bp.send(MainPage.locators.FORM_PASSWORD, "pmQ3yMi1")
     bp.send(MainPage.locators.FORM_PASSWORD, Keys.RETURN)
     return CabinetPage(driver, config)
+
+@pytest.fixture(scope='function')
+def Mytarget_api():
+    user = 'qa_python_mail@ro.ru'
+    password = "pmQ3yMi1"
+    return MytargetClient(user, password)
