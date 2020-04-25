@@ -5,3 +5,4 @@ tests/.pytest_cache
 ui/__pycache__
 ui/locators/__pycache__
 ui/pages/__pycache__
+api/__pycache__
