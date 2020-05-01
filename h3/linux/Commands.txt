@@ -1,0 +1,25 @@
+NGINX:
+
+sudo yum install epel-release //добавили репозиторий с nginx
+sudo yum install nginx //устанавливаем nginx
+sudo vi /etc/nginx/nginx.conf
+Замена listen 80 на 81 
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --permanent --add-port 81\tcp
+semanage port -a -t http_port_t -p tcp 81
+sudo systemctl start nginx //запуск
+sudo systemctl status nginx //проверка
+
+
+SSH:
+
+sudo vi /etc/ssh/sshd_config 
+Добавить строчки:
+Port 22
+Port 2003
+sudo yum install -y policycoreutils-python
+sudo semanage port -m -t ssh_port_t -p tcp 2003
+sudo semanage port -l | grep  2003 //проверка
+sudo firewall-cmd --permanent  --zone=public --add-port 2003\tcp
+sudo firewall-cmd --reload
+sudo netstat -tulpan | grep 2003
