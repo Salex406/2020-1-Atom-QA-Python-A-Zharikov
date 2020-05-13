@@ -1,0 +1,45 @@
+Log contains: 51462 lines.
+Number of requests:
+GET - 51379
+POST -
+HEAD - 83
+PUT -
+DELETE -
+CONNECT -
+OPTIONS -
+TRACE -
+PATCH -
+Top 10 by size:
+5.9.121.211 [01/Jun/2015:20:06:53 +0000] "GET /downloads/product_1 86377168
+2a01:7e00::f03c:91ff:fe70:a4cc [18/May/2015:16:05:29 +0000] "GET /downloads/product_1 86166026
+96.127.57.42 [20/May/2015:05:05:36 +0000] "GET /downloads/product_1 85619205
+75.171.227.253 [24/May/2015:20:05:58 +0000] "GET /downloads/product_1 85619205
+74.205.117.244 [31/May/2015:21:05:19 +0000] "GET /downloads/product_1 85619205
+74.205.117.244 [31/May/2015:14:05:54 +0000] "GET /downloads/product_1 85619205
+74.205.117.244 [31/May/2015:14:05:51 +0000] "GET /downloads/product_1 85619205
+74.205.117.244 [30/May/2015:10:05:14 +0000] "GET /downloads/product_1 85619205
+74.205.117.244 [29/May/2015:13:05:53 +0000] "GET /downloads/product_1 85619205
+74.205.117.244 [29/May/2015:12:05:40 +0000] "GET /downloads/product_1 85619205
+Client errors:
+81.198.186.18 "GET /downloads/product_1 404 383
+81.198.186.18 "GET /downloads/product_1 404 382
+81.198.186.18 "GET /downloads/product_1 404 382
+81.198.186.18 "GET /downloads/product_1 404 381
+81.198.186.18 "GET /downloads/product_1 404 381
+81.198.186.18 "GET /downloads/product_1 404 381
+81.198.186.18 "GET /downloads/product_1 404 381
+81.198.186.18 "GET /downloads/product_1 404 380
+81.198.186.18 "GET /downloads/product_1 404 380
+81.198.186.18 "GET /downloads/product_1 404 380
+Redirects:
+96.244.75.189 "GET /downloads/product_2 304 0
+96.244.75.189 "GET /downloads/product_2 304 0
+96.244.75.189 "GET /downloads/product_2 304 0
+96.244.75.189 "GET /downloads/product_2 304 0
+96.225.126.53 "GET /downloads/product_2 304 0
+96.225.126.53 "GET /downloads/product_2 304 0
+96.225.126.53 "GET /downloads/product_2 304 0
+96.225.126.53 "GET /downloads/product_2 304 0
+96.225.126.53 "GET /downloads/product_2 304 0
+96.225.126.53 "GET /downloads/product_2 304 0
+End of script
