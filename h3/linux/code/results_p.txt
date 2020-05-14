@@ -1,0 +1,46 @@
+Число запросов: 51462
+GET: 51379
+POST: 0
+HEAD: 83
+PUT: 0
+DELETE: 0
+CONNECT: 0
+OPTIONS: 0
+TRACE: 0
+PATCH: 0
+Топ 10 запросов ПО размеру:
+           ip                          time                              request  status  size
+  93.180.71.3  [17/May/2015:08:05:32 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+  93.180.71.3  [17/May/2015:08:05:23 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+ 80.91.33.133  [17/May/2015:08:05:24 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+ 217.168.17.5  [17/May/2015:08:05:34 +0000]  "GET /downloads/product_1 HTTP/1.1"     200   490
+ 217.168.17.5  [17/May/2015:08:05:09 +0000]  "GET /downloads/product_2 HTTP/1.1"     200   490
+  93.180.71.3  [17/May/2015:08:05:57 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+ 217.168.17.5  [17/May/2015:08:05:02 +0000]  "GET /downloads/product_2 HTTP/1.1"     404   337
+ 217.168.17.5  [17/May/2015:08:05:42 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   332
+ 80.91.33.133  [17/May/2015:08:05:01 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+  93.180.71.3  [17/May/2015:08:05:27 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+Топ 10 запросов с клиентской ошибкой:
+            ip                          time                              request  status  size
+ 81.198.186.18  [29/May/2015:05:05:41 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   383
+ 81.198.186.18  [29/May/2015:04:05:49 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   382
+ 81.198.186.18  [29/May/2015:05:05:14 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   382
+ 81.198.186.18  [29/May/2015:04:05:01 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   381
+ 81.198.186.18  [29/May/2015:05:05:59 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   381
+ 81.198.186.18  [29/May/2015:05:05:39 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   381
+ 81.198.186.18  [29/May/2015:05:05:42 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   381
+ 81.198.186.18  [29/May/2015:05:05:37 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   380
+ 81.198.186.18  [29/May/2015:04:05:43 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   380
+ 81.198.186.18  [29/May/2015:04:05:47 +0000]  "GET /downloads/product_1 HTTP/1.1"     404   380
+Топ 10 запросов с редиректами:
+              ip                          time                              request  status  size
+     93.180.71.3  [17/May/2015:08:05:32 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+   65.39.197.164  [28/May/2015:21:05:06 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+   54.183.135.30  [29/May/2015:02:05:19 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+   65.39.197.164  [29/May/2015:02:05:04 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+   65.39.197.164  [29/May/2015:02:05:20 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+   54.183.135.30  [29/May/2015:02:05:04 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+   54.183.135.30  [29/May/2015:02:05:47 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0
+ 180.179.174.219  [29/May/2015:02:05:04 +0000]  "GET /downloads/product_2 HTTP/1.1"     304     0
+   185.55.52.139  [29/May/2015:02:05:20 +0000]  "GET /downloads/product_2 HTTP/1.1"     304     0
+   185.55.52.139  [29/May/2015:02:05:06 +0000]  "GET /downloads/product_1 HTTP/1.1"     304     0

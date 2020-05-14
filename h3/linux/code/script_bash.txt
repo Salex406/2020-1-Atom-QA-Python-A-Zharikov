@@ -1,0 +1,38 @@
+#!/bin/bash
+if [ $# -eq 0 ]
+then
+echo "Err: you should input log file path as argument"
+else
+logfile=$(cat $1)
+nOfLines=$(awk ' END{print NR} ' <<< "$logfile")
+nOfGET=$(awk ' /GET/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfPOST=$(awk ' /POST/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfHEAD=$(awk ' /HEAD/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfPUT=$(awk ' /PUT/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfDELETE=$(awk ' /DELETE/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfCONNECT=$(awk ' /CONNECT/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfOPTIONS=$(awk ' /OPTIONS/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfTRACE=$(awk ' /TRACE/ {cnt++} END{print cnt}' <<< "$logfile")
+nOfPATCH=$(awk ' /PATCH/ {cnt++} END{print cnt}' <<< "$logfile")
+echo "Log contains: $nOfLines lines." > result.txt
+echo "Number of requests:" >> result.txt
+echo "GET - $nOfGET" >> result.txt
+echo "POST - $nOfPOST" >> result.txt
+echo "HEAD - $nOfHEAD" >> result.txt
+echo "PUT - $nOfPUT" >> result.txt
+echo "DELETE - $nOfDELETE" >> result.txt
+echo "CONNECT - $nOfCONNECT" >> result.txt
+echo "OPTIONS - $nOfOPTIONS" >> result.txt
+echo "TRACE - $nOfTRACE" >> result.txt
+echo "PATCH - $nOfPATCH" >> result.txt
+echo "Top 10 by size:" >> result.txt
+awk ' {print $1, $4, $5, $6, $7, $10}' <<< "$logfile" | sort -nrk6 | head -10 >> result.txt
+echo "Client errors:" >> result.txt
+awk ' { if(($9>=400) && ($9<500)) {  print $1, $6, $7, $9, $10 }}' <<< "$logfile" | sort -nrk5 | head -10 >> result.txt
+echo "Redirects:" >> result.txt
+awk ' { if(($9>=300) && ($9<400)) {  print $1, $6, $7, $9, $10 }}' <<< "$logfile" | sort -nrk5 | head -10 >> result.txt
+echo "End of script" >> result.txt
+fi
+
+
+
