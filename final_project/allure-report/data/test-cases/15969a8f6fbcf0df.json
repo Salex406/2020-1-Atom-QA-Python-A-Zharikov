@@ -1,0 +1,163 @@
+{
+  "uid" : "15969a8f6fbcf0df",
+  "name" : "test_tcpdump",
+  "fullName" : "test_ui.TestMainPage#test_tcpdump",
+  "historyId" : "fb4ad211a8216e80e11090f67a0ebf9f",
+  "time" : {
+    "start" : 1590595821085,
+    "stop" : 1590595823432,
+    "duration" : 2347
+  },
+  "description" : "\n        CHECK 'tcpdump' BUTTON\n        \n        Step 1:\n        Click 'tcpdump' button on the main page\n\n        EXPECT: \n        TCPdump examples page is shown\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK 'tcpdump' BUTTON\n    \n    Step 1:\n    Click 'tcpdump' button on the main page\n\n    EXPECT: \n    TCPdump examples page is shown\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595817792,
+      "stop" : 1590595817792,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595806450,
+      "stop" : 1590595817791,
+      "duration" : 11341
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1590595817792,
+      "stop" : 1590595821083,
+      "duration" : 3291
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586611,
+      "stop" : 1590595586652,
+      "duration" : 41
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586652,
+      "stop" : 1590595586683,
+      "duration" : 31
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595823505,
+      "stop" : 1590595823609,
+      "duration" : 104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page::0",
+    "time" : {
+      "start" : 1590595823433,
+      "stop" : 1590595823504,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "UI"
+  }, {
+    "name" : "suite",
+    "value" : "test_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "2995-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "UI" ]
+  },
+  "source" : "15969a8f6fbcf0df.json",
+  "parameterValues" : [ ]
+}

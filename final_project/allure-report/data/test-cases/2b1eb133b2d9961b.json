@@ -1,0 +1,163 @@
+{
+  "uid" : "2b1eb133b2d9961b",
+  "name" : "test_history_python",
+  "fullName" : "test_ui.TestMainPage#test_history_python",
+  "historyId" : "cce571a1b0eff882ac615613b622ef8f",
+  "time" : {
+    "start" : 1590595798863,
+    "stop" : 1590595800289,
+    "duration" : 1426
+  },
+  "description" : "\n        CHECK 'PYTHON HISTORY' BUTTON\n        \n        Step 1:\n        Click 'python history' button on the main page\n\n        EXPECT: \n        \"History of Python - Wikipedia\" page is shown\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK 'PYTHON HISTORY' BUTTON\n    \n    Step 1:\n    Click 'python history' button on the main page\n\n    EXPECT: \n    &quot;History of Python - Wikipedia&quot; page is shown\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586612,
+      "stop" : 1590595586644,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595794229,
+      "stop" : 1590595794229,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586644,
+      "stop" : 1590595586677,
+      "duration" : 33
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595774170,
+      "stop" : 1590595794228,
+      "duration" : 20058
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1590595794229,
+      "stop" : 1590595798860,
+      "duration" : 4631
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595800501,
+      "stop" : 1590595800955,
+      "duration" : 454
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page::0",
+    "time" : {
+      "start" : 1590595800290,
+      "stop" : 1590595800500,
+      "duration" : 210
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "UI"
+  }, {
+    "name" : "suite",
+    "value" : "test_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "3006-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "UI" ]
+  },
+  "source" : "2b1eb133b2d9961b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,444 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 27 19:07:19 MSK 2020","Wed May 27 19:07:21 MSK 2020","1515","","test_api","TestAPI","","","test_auth_code_positive","
+        CHECK LOGIN PAGE RSPONSE CODE IF LOGIN IS SUCCESS
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Try to login via login page
+        
+        EXPECT: status_code == 200
+        "
+"failed","Wed May 27 19:09:03 MSK 2020","Wed May 27 19:09:07 MSK 2020","4104","","test_ui","TestRegisterPage","","","test_register_active_time","
+        CHECK 'ACTIVE TIME' FLAG AFTER REGISTRATION
+        
+        Step 1:
+        Register user via registration page
+        
+        Step 2:
+        Check that 'active time' field is not null in database
+        
+        EXPECT: 
+        'active time' field is not null in database
+        "
+"passed","Wed May 27 19:09:31 MSK 2020","Wed May 27 19:09:36 MSK 2020","5236","","test_ui","TestMainPage","","","test_future_of_the_internet","
+        CHECK 'FUTURE OF THE INTERNET' BUTTON
+        
+        Step 1:
+        Click 'future of the internet' button on the main page
+
+        EXPECT: 
+        'future of the internet' article is shown
+        "
+"passed","Wed May 27 19:09:32 MSK 2020","Wed May 27 19:09:33 MSK 2020","1186","","test_ui","TestMainPage","","","test_what_is_api","
+        CHECK 'WHAT IS API' BUTTON
+        
+        Step 1:
+        Click 'what is api' button on the main page
+
+        EXPECT: 
+        wikipedia page is shown
+        "
+"failed","Wed May 27 19:08:39 MSK 2020","Wed May 27 19:08:41 MSK 2020","1575","","test_ui","TestRegisterPage","","","test_reg_form_validation_multiple_error[1]","
+        CHECK REGISTER FORM VALIDATION ERRORS
+        
+        Step 1:
+        Type in data into forms (with 2 or 3 errors)
+        
+        Step 2:
+        Click register
+        
+        Step 3:
+        Check that user is not created and error message is displayed
+
+        EXPECT: 
+        User is not created, error message displayed correctly
+        "
+"passed","Wed May 27 19:09:20 MSK 2020","Wed May 27 19:09:21 MSK 2020","516","","test_ui","TestMainPage","","","test_logout","
+        CHECK LOGOUT BUTTON
+        
+        Step 1:
+        Click logout button on the main page
+
+        EXPECT: 
+        login page is shown
+        "
+"passed","Wed May 27 19:06:37 MSK 2020","Wed May 27 19:06:39 MSK 2020","1320","","test_api","TestAPI","","","test_del_user","
+        CHECK DELETE USER API COMMAND
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Delete user via api request
+        Step 3:
+        Check user in db
+        Check request answer
+        
+        EXPECT: status_code == 204, user not in db(ObjectDeletedError)
+        "
+"failed","Wed May 27 19:08:55 MSK 2020","Wed May 27 19:08:57 MSK 2020","1468","","test_ui","TestRegisterPage","","","test_reg_form_validation_multiple_error[3]","
+        CHECK REGISTER FORM VALIDATION ERRORS
+        
+        Step 1:
+        Type in data into forms (with 2 or 3 errors)
+        
+        Step 2:
+        Click register
+        
+        Step 3:
+        Check that user is not created and error message is displayed
+
+        EXPECT: 
+        User is not created, error message displayed correctly
+        "
+"passed","Wed May 27 19:08:13 MSK 2020","Wed May 27 19:08:14 MSK 2020","1066","","test_ui","TestRegisterPage","","","test_reg_form_validation_1_error[pwd]","
+        CHECK REGISTER FORM VALIDATION ERRORS
+        
+        Step 1:
+        Type in data into forms (with one error)
+        
+        Step 2:
+        Click register
+        
+        Step 3:
+        Check that user is not created and error message is displayed
+
+        EXPECT: 
+        User is not created, error message displayed correctly
+        "
+"passed","Wed May 27 19:08:10 MSK 2020","Wed May 27 19:08:12 MSK 2020","2074","","test_ui","TestLoginPage","","","test_vk[99999999999999999999999]","
+        CHECK VK ID
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Login as user
+        Step 3:
+        Check if vk_id is on the page
+
+        EXPECT: 
+        vk_id in page source_code
+        "
+"passed","Wed May 27 19:10:21 MSK 2020","Wed May 27 19:10:23 MSK 2020","2347","","test_ui","TestMainPage","","","test_tcpdump","
+        CHECK 'tcpdump' BUTTON
+        
+        Step 1:
+        Click 'tcpdump' button on the main page
+
+        EXPECT: 
+        TCPdump examples page is shown
+        "
+"passed","Wed May 27 19:06:37 MSK 2020","Wed May 27 19:06:39 MSK 2020","2089","","test_api","TestAPI","","","test_access_negative","
+        CHECK BLOCK USER API COMMAND
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Block access via api request
+        Step 3:
+        Check access in db
+        Check request answer
+        
+        EXPECT: status_code == 200, access == 0
+        "
+"passed","Wed May 27 19:09:40 MSK 2020","Wed May 27 19:09:41 MSK 2020","309","","test_ui","TestMainPage","","","test_home","
+        CHECK 'HOME' BUTTON
+        
+        Step 1:
+        Click 'home' button on the main page
+
+        EXPECT: 
+        Main page is shown
+        "
+"passed","Wed May 27 19:07:24 MSK 2020","Wed May 27 19:07:26 MSK 2020","2611","","test_ui","TestLoginPage","","","test_login_positive","
+        CHECK LOGIN POSITIVE
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Try to login as user
+
+        EXPECT: 
+        Login success. Redirect to main page
+        "
+"passed","Wed May 27 19:07:42 MSK 2020","Wed May 27 19:07:42 MSK 2020","65","","test_ui","TestLoginPage","","","test_validation","
+        CHECK LOGIN FORM VALIDATION
+        
+        Step 1:
+        Check ""required"" attribute
+
+        EXPECT: 
+        ""required"" attribute is exists
+        "
+"passed","Wed May 27 19:10:21 MSK 2020","Wed May 27 19:10:23 MSK 2020","2115","","test_ui","TestMainPage","","","test_wireshark_news","
+        CHECK 'wireshark news' BUTTON
+        
+        Step 1:
+        Click 'wireshark news' button on the main page
+
+        EXPECT: 
+        'wireshark news' page is shown
+        "
+"passed","Wed May 27 19:09:58 MSK 2020","Wed May 27 19:09:59 MSK 2020","1006","","test_ui","TestMainPage","","","test_python","
+        CHECK 'PYTHON' BUTTON
+        
+        Step 1:
+        Click 'python' button on the main page
+
+        EXPECT: 
+        Python.org page is shown
+        "
+"failed","Wed May 27 19:06:55 MSK 2020","Wed May 27 19:06:56 MSK 2020","485","","test_api","TestAPI","","","test_add_user","
+        CHECK ADD USER API COMMAND
+        
+        Step 1:
+        Add user via api request
+        Step 2:
+        Delete user from db
+        
+        EXPECT: status_code == 201, no ObjectDeletedError
+        "
+"passed","Wed May 27 19:07:04 MSK 2020","Wed May 27 19:07:06 MSK 2020","2194","","test_api","TestAPI","","","test_add_duplicate","
+        CHECK DUPLICATE SITUATION IN API REQUESTS
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Try to add this user via api request
+        
+        EXPECT: status_code == 304
+        "
+"passed","Wed May 27 19:08:13 MSK 2020","Wed May 27 19:08:16 MSK 2020","2628","","test_ui","TestLoginPage","","","test_login_active_time","
+        CHECK 'ACTIVE TIME' FIELD IN DB
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Login as this user
+        Step 3:
+        Check that 'active time' changed
+
+        EXPECT: 
+        'active time' is not null
+        "
+"passed","Wed May 27 19:10:21 MSK 2020","Wed May 27 19:10:23 MSK 2020","2214","","test_ui","TestMainPage","","","test_wireshark_download","
+        CHECK 'wireshark download' BUTTON
+        
+        Step 1:
+        Click 'wireshark download' button on the main page
+
+        EXPECT: 
+        'wireshark download' page is shown
+        "
+"failed","Wed May 27 19:07:01 MSK 2020","Wed May 27 19:07:02 MSK 2020","719","","test_api","TestAPI","","","test_reg_duplicate_name","
+        CHECK DUPLICATE USERNAMES 
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Try to add user with same name via register page
+        
+        EXPECT: status_code == 304
+        "
+"passed","Wed May 27 19:07:19 MSK 2020","Wed May 27 19:07:20 MSK 2020","822","","test_ui","TestLoginPage","","","test_login_negative","
+        CHECK NEGATIVE LOGIN
+        
+        Step 1:
+        Try login as unregistered user
+
+        EXPECT: 
+        ""Invalid username or password"" in page_source, 
+        "
+"failed","Wed May 27 19:07:26 MSK 2020","Wed May 27 19:07:26 MSK 2020","9","","test_api","TestAPI","","","test_auth_code_negative","
+        CHECK LOGIN PAGE RSPONSE CODE IF LOGIN IS FAIL
+        
+        Step 1:
+        Try to login via login page
+        
+        EXPECT: status_code == 400
+        "
+"passed","Wed May 27 19:09:03 MSK 2020","Wed May 27 19:09:08 MSK 2020","4685","","test_ui","TestRegisterPage","","","test_register_positive","
+        CHECK REGISTERATION POSITIVE
+        
+        Step 1:
+        Register user via registration page
+        
+        Step 2:
+        Check that user is in the db
+        
+        EXPECT: 
+        User exists in db
+        "
+"passed","Wed May 27 19:06:37 MSK 2020","Wed May 27 19:06:37 MSK 2020","20","","test_api","TestAPI","","","test_status","
+        CHECK STATUS CODE
+        
+        Step 1:
+        Try connect to server and check status
+        for 200
+        
+        EXPECT: status_code == 200
+        "
+"passed","Wed May 27 19:09:32 MSK 2020","Wed May 27 19:09:33 MSK 2020","1130","","test_ui","TestMainPage","","","test_smtp","
+        CHECK 'SMTP' BUTTON
+        
+        Step 1:
+        Click 'SMTP' button on the main page
+
+        EXPECT: 
+        wikipedia page is shown
+        "
+"passed","Wed May 27 19:07:55 MSK 2020","Wed May 27 19:07:57 MSK 2020","2028","","test_ui","TestLoginPage","","","test_login_active","
+        CHECK 'ACTIVE' FLAG IN DB
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Login as this user
+        Step 3:
+        Check that 'active' is 1 
+
+        EXPECT: 
+        'active' flag is 1
+        "
+"passed","Wed May 27 19:08:10 MSK 2020","Wed May 27 19:08:10 MSK 2020","107","","test_ui","TestRegisterPage","","","test_reg_validation","
+        CHECK REGISTER FORM VALIDATION
+        
+        Step 1:
+        Check username, password, confirm forms 'required' attribute
+
+        EXPECT: 
+        'required' attribute exists
+        "
+"passed","Wed May 27 19:08:32 MSK 2020","Wed May 27 19:08:34 MSK 2020","1134","","test_ui","TestRegisterPage","","","test_reg_form_validation_1_error[email]","
+        CHECK REGISTER FORM VALIDATION ERRORS
+        
+        Step 1:
+        Type in data into forms (with one error)
+        
+        Step 2:
+        Click register
+        
+        Step 3:
+        Check that user is not created and error message is displayed
+
+        EXPECT: 
+        User is not created, error message displayed correctly
+        "
+"passed","Wed May 27 19:08:39 MSK 2020","Wed May 27 19:08:41 MSK 2020","1478","","test_ui","TestRegisterPage","","","test_reg_form_validation_1_error[name]","
+        CHECK REGISTER FORM VALIDATION ERRORS
+        
+        Step 1:
+        Type in data into forms (with one error)
+        
+        Step 2:
+        Click register
+        
+        Step 3:
+        Check that user is not created and error message is displayed
+
+        EXPECT: 
+        User is not created, error message displayed correctly
+        "
+"passed","Wed May 27 19:09:58 MSK 2020","Wed May 27 19:10:05 MSK 2020","6389","","test_ui","TestMainPage","","","test_flask","
+        CHECK 'flask' BUTTON
+        
+        Step 1:
+        Click 'flask' button on the main page
+
+        EXPECT: 
+        Flask documentation main page is shown
+        "
+"passed","Wed May 27 19:09:58 MSK 2020","Wed May 27 19:10:00 MSK 2020","1426","","test_ui","TestMainPage","","","test_history_python","
+        CHECK 'PYTHON HISTORY' BUTTON
+        
+        Step 1:
+        Click 'python history' button on the main page
+
+        EXPECT: 
+        ""History of Python - Wikipedia"" page is shown
+        "
+"passed","Wed May 27 19:07:45 MSK 2020","Wed May 27 19:07:48 MSK 2020","3051","","test_ui","TestLoginPage","","","test_vk[0]","
+        CHECK VK ID
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Login as user
+        Step 3:
+        Check if vk_id is on the page
+
+        EXPECT: 
+        vk_id in page source_code
+        "
+"failed","Wed May 27 19:09:59 MSK 2020","Wed May 27 19:10:00 MSK 2020","1815","","test_ui","TestMainPage","","","test_linux","
+        CHECK 'download centos 7' BUTTON
+        
+        Step 1:
+        Click 'download centos 7' button on the main page
+
+        EXPECT: 
+        Centos 7 download page is shown
+        "
+"passed","Wed May 27 19:06:37 MSK 2020","Wed May 27 19:06:40 MSK 2020","2307","","test_api","TestAPI","","","test_access_positive","
+        CHECK UNLOCK USER API COMMAND
+        
+        Step 1:
+        Add user to db, update access to 0
+        Step 2:
+        Unlock access via api request
+        Step 3:
+        Check access in db
+        Check request answer
+        
+        EXPECT: status_code == 200, access == 1
+        "
+"failed","Wed May 27 19:06:57 MSK 2020","Wed May 27 19:06:59 MSK 2020","2234","","test_api","TestAPI","","","test_reg_duplicate_eml","
+        CHECK DUPLICATE EMAIL
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Try to add user with same email via register page
+        
+        EXPECT: status_code == 304
+        "
+"passed","Wed May 27 19:07:50 MSK 2020","Wed May 27 19:07:52 MSK 2020","2531","","test_ui","TestLoginPage","","","test_login_access","
+        CHECK ACCESS
+        
+        Step 1:
+        Add user to db
+        Step 2:
+        Update access to 0
+        Step 3:
+        Try to login
+
+        EXPECT: 
+        ""Ваша учетная запись заблокирована"" in page_source
+        "
+"failed","Wed May 27 19:08:59 MSK 2020","Wed May 27 19:09:02 MSK 2020","3373","","test_ui","TestRegisterPage","","","test_register_active","
+        CHECK 'ACTIVE' FLAG AFTER REGISTRATION
+        
+        Step 1:
+        Register user via registration page
+        
+        Step 2:
+        Check that 'active' field is not null in database
+        
+        EXPECT: 
+        'active' field == 1
+        "
+"failed","Wed May 27 19:08:36 MSK 2020","Wed May 27 19:08:37 MSK 2020","1315","","test_ui","TestRegisterPage","","","test_reg_form_validation_multiple_error[2]","
+        CHECK REGISTER FORM VALIDATION ERRORS
+        
+        Step 1:
+        Type in data into forms (with 2 or 3 errors)
+        
+        Step 2:
+        Click register
+        
+        Step 3:
+        Check that user is not created and error message is displayed
+
+        EXPECT: 
+        User is not created, error message displayed correctly
+        "

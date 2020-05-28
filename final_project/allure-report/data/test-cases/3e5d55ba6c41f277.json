@@ -1,0 +1,148 @@
+{
+  "uid" : "3e5d55ba6c41f277",
+  "name" : "test_auth_code_positive",
+  "fullName" : "test_api.TestAPI#test_auth_code_positive",
+  "historyId" : "845f589eefb04a4343f5cdf348937f49",
+  "time" : {
+    "start" : 1590595639997,
+    "stop" : 1590595641512,
+    "duration" : 1515
+  },
+  "description" : "\n        CHECK LOGIN PAGE RSPONSE CODE IF LOGIN IS SUCCESS\n        \n        Step 1:\n        Add user to db\n        Step 2:\n        Try to login via login page\n        \n        EXPECT: status_code == 200\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK LOGIN PAGE RSPONSE CODE IF LOGIN IS SUCCESS\n    \n    Step 1:\n    Add user to db\n    Step 2:\n    Try to login via login page\n    \n    EXPECT: status_code == 200\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595616977,
+      "stop" : 1590595639633,
+      "duration" : 22656
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "api",
+    "time" : {
+      "start" : 1590595639634,
+      "stop" : 1590595639995,
+      "duration" : 361
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586611,
+      "stop" : 1590595586652,
+      "duration" : 41
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586652,
+      "stop" : 1590595586683,
+      "duration" : 31
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595639633,
+      "stop" : 1590595639634,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595641518,
+      "stop" : 1590595641871,
+      "duration" : 353
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "API"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAPI"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "2995-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "API" ]
+  },
+  "source" : "3e5d55ba6c41f277.json",
+  "parameterValues" : [ ]
+}

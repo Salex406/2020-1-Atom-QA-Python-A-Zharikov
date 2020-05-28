@@ -1,0 +1,148 @@
+{
+  "uid" : "dfaa11b6175ba699",
+  "name" : "test_access_negative",
+  "fullName" : "test_api.TestAPI#test_access_negative",
+  "historyId" : "ccf80209c177ac084a8fc10014b0bfe0",
+  "time" : {
+    "start" : 1590595597770,
+    "stop" : 1590595599859,
+    "duration" : 2089
+  },
+  "description" : "\n        CHECK BLOCK USER API COMMAND\n        \n        Step 1:\n        Add user to db\n        Step 2:\n        Block access via api request\n        Step 3:\n        Check access in db\n        Check request answer\n        \n        EXPECT: status_code == 200, access == 0\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK BLOCK USER API COMMAND\n    \n    Step 1:\n    Add user to db\n    Step 2:\n    Block access via api request\n    Step 3:\n    Check access in db\n    Check request answer\n    \n    EXPECT: status_code == 200, access == 0\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586644,
+      "stop" : 1590595586678,
+      "duration" : 34
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "api",
+    "time" : {
+      "start" : 1590595597469,
+      "stop" : 1590595597767,
+      "duration" : 298
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595586678,
+      "stop" : 1590595597468,
+      "duration" : 10790
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595597468,
+      "stop" : 1590595597468,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586612,
+      "stop" : 1590595586644,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595599860,
+      "stop" : 1590595599913,
+      "duration" : 53
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "API"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAPI"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "2999-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "API" ]
+  },
+  "source" : "dfaa11b6175ba699.json",
+  "parameterValues" : [ ]
+}

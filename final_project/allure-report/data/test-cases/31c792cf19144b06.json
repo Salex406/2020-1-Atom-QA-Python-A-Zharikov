@@ -1,0 +1,148 @@
+{
+  "uid" : "31c792cf19144b06",
+  "name" : "test_login_active_time",
+  "fullName" : "test_ui.TestLoginPage#test_login_active_time",
+  "historyId" : "eb4b732c58c2d141cdcca1aee43a56e3",
+  "time" : {
+    "start" : 1590595693741,
+    "stop" : 1590595696369,
+    "duration" : 2628
+  },
+  "description" : "\n        CHECK 'ACTIVE TIME' FIELD IN DB\n        \n        Step 1:\n        Add user to db\n        Step 2:\n        Login as this user\n        Step 3:\n        Check that 'active time' changed\n\n        EXPECT: \n        'active time' is not null\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK 'ACTIVE TIME' FIELD IN DB\n    \n    Step 1:\n    Add user to db\n    Step 2:\n    Login as this user\n    Step 3:\n    Check that 'active time' changed\n\n    EXPECT: \n    'active time' is not null\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595693739,
+      "stop" : 1590595693739,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586644,
+      "stop" : 1590595586678,
+      "duration" : 34
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595677284,
+      "stop" : 1590595693739,
+      "duration" : 16455
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "login_page",
+    "time" : {
+      "start" : 1590595693739,
+      "stop" : 1590595693740,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586612,
+      "stop" : 1590595586644,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595696371,
+      "stop" : 1590595696675,
+      "duration" : 304
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "UI"
+  }, {
+    "name" : "suite",
+    "value" : "test_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "2999-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "UI" ]
+  },
+  "source" : "31c792cf19144b06.json",
+  "parameterValues" : [ ]
+}

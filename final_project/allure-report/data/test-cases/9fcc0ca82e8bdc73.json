@@ -1,0 +1,163 @@
+{
+  "uid" : "9fcc0ca82e8bdc73",
+  "name" : "test_reg_form_validation_multiple_error[1]",
+  "fullName" : "test_ui.TestRegisterPage#test_reg_form_validation_multiple_error",
+  "historyId" : "a435d15b96b0098cf0358dcc740f9cf7",
+  "time" : {
+    "start" : 1590595719780,
+    "stop" : 1590595721355,
+    "duration" : 1575
+  },
+  "description" : "\n        CHECK REGISTER FORM VALIDATION ERRORS\n        \n        Step 1:\n        Type in data into forms (with 2 or 3 errors)\n        \n        Step 2:\n        Click register\n        \n        Step 3:\n        Check that user is not created and error message is displayed\n\n        EXPECT: \n        User is not created, error message displayed correctly\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK REGISTER FORM VALIDATION ERRORS\n    \n    Step 1:\n    Type in data into forms (with 2 or 3 errors)\n    \n    Step 2:\n    Click register\n    \n    Step 3:\n    Check that user is not created and error message is displayed\n\n    EXPECT: \n    User is not created, error message displayed correctly\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert \"{'username'...ust match']}\" not in '<html lang=...body></html>'\n  \"{'username': ['Inc...words must match']}\" is contained here:\n    <html lang=\"en\"><head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    \n        \n            <title></title>...\n  \n  ...Full output truncated (91 lines hidden), use '-vv' to show",
+  "statusTrace" : "self = <test_ui.TestRegisterPage object at 0x7fbe640e9580>\nregister_page = <ui.pages.register.RegisterPage object at 0x7fbe6407ff40>\nerr = 1\n\n    @pytest.mark.UI\n    @pytest.mark.parametrize(\"err\", [1, 2, 3])\n    def test_reg_form_validation_multiple_error(self, register_page, err):\n        \"\"\"\n        CHECK REGISTER FORM VALIDATION ERRORS\n    \n        Step 1:\n        Type in data into forms (with 2 or 3 errors)\n    \n        Step 2:\n        Click register\n    \n        Step 3:\n        Check that user is not created and error message is displayed\n    \n        EXPECT:\n        User is not created, error message displayed correctly\n        \"\"\"\n        if err == 1:\n            NAME = register_page.generate_data()\n            register_page.send(register_page.locators.FORM_USERNAME, \"1\")\n            register_page.send(register_page.locators.FORM_PASSWORD, NAME)\n            register_page.send(register_page.locators.FORM_CPASSWORD, NAME + \"@test.tuu\")\n            register_page.send(register_page.locators.FORM_EMAIL, NAME + \"@test.tuu\")\n            register_page.click(register_page.locators.FORM_CONFIRM)\n            register_page.click(register_page.locators.BUTTON_SUBMIT)\n            assert \"Passwords must match\" in register_page.driver.page_source\n            assert \"Incorrect username length\" in register_page.driver.page_source\n>           assert \"{'username': ['Incorrect username length'], 'password': ['Passwords must match']}\" not in register_page.driver.page_source\nE           assert \"{'username'...ust match']}\" not in '<html lang=...body></html>'\nE             \"{'username': ['Inc...words must match']}\" is contained here:\nE               <html lang=\"en\"><head>\nE                   <meta charset=\"UTF-8\">\nE                   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\nE               \nE                   \nE                       <title></title>...\nE             \nE             ...Full output truncated (91 lines hidden), use '-vv' to show\n\ntest_ui.py:268: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595694934,
+      "stop" : 1590595719352,
+      "duration" : 24418
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "register_page",
+    "time" : {
+      "start" : 1590595719352,
+      "stop" : 1590595719777,
+      "duration" : 425
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586612,
+      "stop" : 1590595586644,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586644,
+      "stop" : 1590595586677,
+      "duration" : 33
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595719352,
+      "stop" : 1590595719352,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595721382,
+      "stop" : 1590595722237,
+      "duration" : 855
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eb73fd38a1d32ab0",
+      "name" : "test_reg_form_validation_multiple_error",
+      "source" : "eb73fd38a1d32ab0.png",
+      "type" : "image/png",
+      "size" : 41713
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "UI"
+  }, {
+    "name" : "suite",
+    "value" : "test_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegisterPage"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "3006-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "err",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "UI" ]
+  },
+  "source" : "9fcc0ca82e8bdc73.json",
+  "parameterValues" : [ "1" ]
+}
