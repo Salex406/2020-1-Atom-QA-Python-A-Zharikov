@@ -1,0 +1,160 @@
+{
+  "uid" : "c97efe81bb8d4163",
+  "name" : "test_reg_duplicate_eml",
+  "fullName" : "test_api.TestAPI#test_reg_duplicate_eml",
+  "historyId" : "b4bf9df21aa4712411956bcce965c061",
+  "time" : {
+    "start" : 1590595617288,
+    "stop" : 1590595619522,
+    "duration" : 2234
+  },
+  "description" : "\n        CHECK DUPLICATE EMAIL\n        \n        Step 1:\n        Add user to db\n        Step 2:\n        Try to add user with same email via register page\n        \n        EXPECT: status_code == 304\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK DUPLICATE EMAIL\n    \n    Step 1:\n    Add user to db\n    Step 2:\n    Try to add user with same email via register page\n    \n    EXPECT: status_code == 304\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 500 == 304\n  -500\n  +304",
+  "statusTrace" : "self = <test_api.TestAPI object at 0x7f0786422b20>\napi = <api_client.ApiClient object at 0x7f078639e6a0>\n\n    @pytest.mark.API\n    def test_reg_duplicate_eml(self, api):\n        \"\"\"\n        CHECK DUPLICATE EMAIL\n    \n        Step 1:\n        Add user to db\n        Step 2:\n        Try to add user with same email via register page\n    \n        EXPECT: status_code == 304\n        \"\"\"\n        self.builder.add_user(api.get_user())\n        time.sleep(0.3)\n        resp = api.reg_user(\"E47gN5R3\", api.get_user().email, \"3\", \"3\")\n        self.builder.del_user(api.get_user())\n>       assert resp.status_code == 304\nE       assert 500 == 304\nE         -500\nE         +304\n\ntest_api.py:164: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "api",
+    "time" : {
+      "start" : 1590595616887,
+      "stop" : 1590595617286,
+      "duration" : 399
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595599254,
+      "stop" : 1590595616886,
+      "duration" : 17632
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586652,
+      "stop" : 1590595586684,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595616887,
+      "stop" : 1590595616887,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586611,
+      "stop" : 1590595586652,
+      "duration" : 41
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595619577,
+      "stop" : 1590595620460,
+      "duration" : 883
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "72219c4867cd2a70",
+      "name" : "test_reg_duplicate_eml",
+      "source" : "72219c4867cd2a70.png",
+      "type" : "image/png",
+      "size" : 28595
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "API"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAPI"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "3002-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "API" ]
+  },
+  "source" : "c97efe81bb8d4163.json",
+  "parameterValues" : [ ]
+}

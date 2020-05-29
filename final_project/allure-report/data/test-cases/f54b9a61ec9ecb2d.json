@@ -1,0 +1,175 @@
+{
+  "uid" : "f54b9a61ec9ecb2d",
+  "name" : "test_linux",
+  "fullName" : "test_ui.TestMainPage#test_linux",
+  "historyId" : "c1e37ee7e6d51732c6eacae0c37e44ba",
+  "time" : {
+    "start" : 1590595799022,
+    "stop" : 1590595800837,
+    "duration" : 1815
+  },
+  "description" : "\n        CHECK 'download centos 7' BUTTON\n        \n        Step 1:\n        Click 'download centos 7' button on the main page\n\n        EXPECT: \n        Centos 7 download page is shown\n        ",
+  "descriptionHtml" : "<pre><code>    CHECK 'download centos 7' BUTTON\n    \n    Step 1:\n    Click 'download centos 7' button on the main page\n\n    EXPECT: \n    Centos 7 download page is shown\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'centos' in '<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compa...div> </div> </div> </div> <script type=\"text/javascript\" src=\"/static/js/bundle.js?7e94bc65\"></script>  </body></html>'\n +  where '<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compa...div> </div> </div> </div> <script type=\"text/javascript\" src=\"/static/js/bundle.js?7e94bc65\"></script>  </body></html>' = <selenium.webdriver.remote.webdriver.WebDriver (session=\"f3ceaa5e9805e97b5b7ac7bf6bb6faed\")>.page_source\n +    where <selenium.webdriver.remote.webdriver.WebDriver (session=\"f3ceaa5e9805e97b5b7ac7bf6bb6faed\")> = <ui.pages.main.MainPage object at 0x7f0786364520>.driver",
+  "statusTrace" : "self = <test_ui.TestMainPage object at 0x7f078638f0d0>\nmain_page = <ui.pages.main.MainPage object at 0x7f0786364520>\n\n    @pytest.mark.UI\n    def test_linux(self, main_page):\n        \"\"\"\n        CHECK 'download centos 7' BUTTON\n    \n        Step 1:\n        Click 'download centos 7' button on the main page\n    \n        EXPECT:\n        Centos 7 download page is shown\n        \"\"\"\n        element = main_page.find(main_page.locators.BUTTON_LINUX)\n        ActionChains(main_page.driver).move_to_element(element).perform()\n        main_page.click(main_page.locators.BUTTON_CENTOS)\n        main_page.driver.switch_to.window(main_page.driver.window_handles[-1])\n>       assert \"centos\" in main_page.driver.page_source\nE       assert 'centos' in '<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compa...div> </div> </div> </div> <script type=\"text/javascript\" src=\"/static/js/bundle.js?7e94bc65\"></script>  </body></html>'\nE        +  where '<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compa...div> </div> </div> </div> <script type=\"text/javascript\" src=\"/static/js/bundle.js?7e94bc65\"></script>  </body></html>' = <selenium.webdriver.remote.webdriver.WebDriver (session=\"f3ceaa5e9805e97b5b7ac7bf6bb6faed\")>.page_source\nE        +    where <selenium.webdriver.remote.webdriver.WebDriver (session=\"f3ceaa5e9805e97b5b7ac7bf6bb6faed\")> = <ui.pages.main.MainPage object at 0x7f0786364520>.driver\n\ntest_ui.py:520: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1590595794530,
+      "stop" : 1590595794530,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_orm_client",
+    "time" : {
+      "start" : 1590595586652,
+      "stop" : 1590595586684,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1590595794531,
+      "stop" : 1590595799020,
+      "duration" : 4489
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1590595781525,
+      "stop" : 1590595794530,
+      "duration" : 13005
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1590595586611,
+      "stop" : 1590595586652,
+      "duration" : 41
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "main_page::0",
+    "time" : {
+      "start" : 1590595800856,
+      "stop" : 1590595801072,
+      "duration" : 216
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1590595801074,
+      "stop" : 1590595801847,
+      "duration" : 773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d19702d6d91ca32a",
+      "name" : "test_linux",
+      "source" : "d19702d6d91ca32a.png",
+      "type" : "image/png",
+      "size" : 196941
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "UI"
+  }, {
+    "name" : "suite",
+    "value" : "test_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "alex-Z87X-UD3H"
+  }, {
+    "name" : "thread",
+    "value" : "3002-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "UI" ]
+  },
+  "source" : "f54b9a61ec9ecb2d.json",
+  "parameterValues" : [ ]
+}

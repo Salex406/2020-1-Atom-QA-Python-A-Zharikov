@@ -1,0 +1,175 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 210 == 201\n  -210\n  +201",
+      "children" : [ {
+        "name" : "test_add_user",
+        "uid" : "fcc43c60b6d8ab3b",
+        "parentUid" : "d61124e360a6d8b4209d6a004ae99fc3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595615637,
+          "stop" : 1590595616122,
+          "duration" : 485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d61124e360a6d8b4209d6a004ae99fc3"
+    }, {
+      "name" : "AssertionError: assert 500 == 304\n  -500\n  +304",
+      "children" : [ {
+        "name" : "test_reg_duplicate_eml",
+        "uid" : "c97efe81bb8d4163",
+        "parentUid" : "1a1e4b5119aa1ac3c603d8f868d43687",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595617288,
+          "stop" : 1590595619522,
+          "duration" : 2234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1a1e4b5119aa1ac3c603d8f868d43687"
+    }, {
+      "name" : "AssertionError: assert 409 == 304\n  -409\n  +304",
+      "children" : [ {
+        "name" : "test_reg_duplicate_name",
+        "uid" : "8d0db0b5684a84c7",
+        "parentUid" : "42fe9c1631e46982d72fcdd3997c345d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595621409,
+          "stop" : 1590595622128,
+          "duration" : 719
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "42fe9c1631e46982d72fcdd3997c345d"
+    }, {
+      "name" : "AssertionError: assert 401 == 400\n  -401\n  +400",
+      "children" : [ {
+        "name" : "test_auth_code_negative",
+        "uid" : "c9530a454ca53742",
+        "parentUid" : "69d360c4a49da30a191aac75fe20f67c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595646331,
+          "stop" : 1590595646340,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "69d360c4a49da30a191aac75fe20f67c"
+    }, {
+      "name" : "AssertionError: assert \"{'email': [...ust match']}\" not in '<html lang=...body></html>'\n  \"{'email': ['Invali...words must match']}\" is contained here:\n    <html lang=\"en\"><head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    \n        \n            <title></title>...\n  \n  ...Full output truncated (91 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "test_reg_form_validation_multiple_error[2]",
+        "uid" : "bb35a25bf3d2be2e",
+        "parentUid" : "c33964d09a820b69bea9f4ef54649a38",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595716105,
+          "stop" : 1590595717420,
+          "duration" : 1315
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "c33964d09a820b69bea9f4ef54649a38"
+    }, {
+      "name" : "AssertionError: assert \"{'username'...ust match']}\" not in '<html lang=...body></html>'\n  \"{'username': ['Inc...words must match']}\" is contained here:\n    <html lang=\"en\"><head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    \n        \n            <title></title>...\n  \n  ...Full output truncated (91 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "test_reg_form_validation_multiple_error[1]",
+        "uid" : "9fcc0ca82e8bdc73",
+        "parentUid" : "24e6cb6ecb3300505df569a1c3610532",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595719780,
+          "stop" : 1590595721355,
+          "duration" : 1575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "test_reg_form_validation_multiple_error[3]",
+        "uid" : "e7fa50383d737dfa",
+        "parentUid" : "24e6cb6ecb3300505df569a1c3610532",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595735670,
+          "stop" : 1590595737138,
+          "duration" : 1468
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "24e6cb6ecb3300505df569a1c3610532"
+    }, {
+      "name" : "AssertionError: assert 0 == 1\n  -0\n  +1",
+      "children" : [ {
+        "name" : "test_register_active",
+        "uid" : "646e7d9f2729a96e",
+        "parentUid" : "4bb6f9dc9967a51ccc49c6e1826b8383",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595739294,
+          "stop" : 1590595742667,
+          "duration" : 3373
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4bb6f9dc9967a51ccc49c6e1826b8383"
+    }, {
+      "name" : "AssertionError: assert None is not None",
+      "children" : [ {
+        "name" : "test_register_active_time",
+        "uid" : "2161208ca4c24d19",
+        "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595743297,
+          "stop" : 1590595747401,
+          "duration" : 4104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c103f4d22bc3ec7e9ffca4daf59af4a"
+    }, {
+      "name" : "AssertionError: assert 'centos' in '<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compa...div> </div> </div> </div> <script type=\"text/javascript\" src=\"/static/js/bundle.js?7e94bc65\"></script>  </body></html>'\n +  where '<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compa...div> </div> </div> </div> <script type=\"text/javascript\" src=\"/static/js/bundle.js?7e94bc65\"></script>  </body></html>' = <selenium.webdriver.remote.webdriver.WebDriver (session=\"f3ceaa5e9805e97b5b7ac7bf6bb6faed\")>.page_source\n +    where <selenium.webdriver.remote.webdriver.WebDriver (session=\"f3ceaa5e9805e97b5b7ac7bf6bb6faed\")> = <ui.pages.main.MainPage object at 0x7f0786364520>.driver",
+      "children" : [ {
+        "name" : "test_linux",
+        "uid" : "f54b9a61ec9ecb2d",
+        "parentUid" : "0488b6ec4bbd387c0a3e3fe4369106e7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1590595799022,
+          "stop" : 1590595800837,
+          "duration" : 1815
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0488b6ec4bbd387c0a3e3fe4369106e7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
